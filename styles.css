@@ -118,8 +118,8 @@
  #blog-text{
     margin-top: 555px;
     font-size: 1.5em;
-    margin-right: 60%;
-    margin-left: 5%;
+    margin-right: 883px;
+    margin-left: 0%;
     text-align: justify;
     word-break: break-all;
     /* width: 40%; */
@@ -300,6 +300,9 @@ form{
 .join-us button:hover{
     background-color: #234457;
     color: white;
+}
+.images{
+    display: flex;
 }
 @media only screen and (max-width: 500px) {
    body{
@@ -554,6 +557,9 @@ form{
 .join-us button:hover{
     background-color: #234457;
     color: white;
+}
+.images{
+    display: block;
 }
 
 
