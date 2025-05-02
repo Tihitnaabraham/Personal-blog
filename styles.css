@@ -353,8 +353,8 @@ margin: 0%;
     background-color: aliceblue;
  }
  .reflection{
-    display: flex;
-    position:relative;
+    /* display: flex; */
+    /* position:relative; */
 }
 .blog{
    
@@ -392,13 +392,13 @@ margin-right: 0%;}
     margin-left: 80%;
 }
 .reflection{
-    display: block;
+    /* display: block; */
     position: relative;
  
 }
 
 .body-parts{
-    margin: 4%;
+    margin: 5%;
 }
 .reflection1{
   position: relative;
@@ -413,19 +413,19 @@ margin-right: 0%;}
     height: 1000px;
     border-right: 3px solid red;
     position: absolute;
-    left: 50%;
+    left: 40%;
     top:50vh ;
     display: none;
    
 }
 #blog-text{
-    margin-top:250%;
+    top:-500%;
     font-size: 1.5em;
-    margin-right: 0%;
+    margin-right: 5%;
    word-break: break-all;
    
    
-    /* text-align: justify; */
+    text-align: justify;
  }
  .blog{
    
@@ -439,7 +439,7 @@ margin-right: 0%;}
     margin-top: 5%;
     transform: rotate(0deg);
     background-repeat: no-repeat;
-     margin-left: 5%;
+     /* margin-left: 80%; */
      margin-right: 5%;
      border-radius: 10%;
      color: white;
@@ -456,7 +456,7 @@ margin-right: 0%;}
     /* text-align: center; */
     /* font-size: 25px; */
     font-weight: 200;
-    margin-top: 40px;
+    margin-top: 0px;
     transform: rotate(0deg);
     background-repeat: no-repeat;
      margin-left: 5%;
@@ -467,7 +467,7 @@ margin-right: 0%;}
  }
  #comment{
     font-size: 2em;
-  margin-left: 23%;
+  margin-left: 25%;
     margin-top: 150%;
     margin-bottom: 20px;
  }
@@ -559,14 +559,272 @@ form{
     color: white;
 }
 .images{
+ 
     display: block;
 }
-
-
-
-
-
-
-
-
 }
+@media only  screen  and (min-width:500px)and (max-width: 999px){
+    body{
+        margin: 0;
+        background-color: rgb(185, 185, 230);
+        /* overflow: hidden; */
+    }
+    nav {
+    
+     z-index: 1000;
+     width: 100vw;
+     position: fixed;
+     margin: auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 1vw;
+     background-color: white;
+     img{
+         height: 70px;
+     }
+     a {
+         margin-left: 5%;
+         text-decoration: none;
+         color: rgb(175, 42, 42);
+         font-size: large;
+     }
+  }
+  nav button {
+     display: none;
+     
+  }
+  .top-image img{
+ margin: 0%;
+     width: 100%; height: 20em;
+     margin-top: 6em;
+     filter: brightness(0.5);
+  }
+  .top-image h2{
+     position: sticky;
+     text-align: center;
+    width: 50%;
+    margin-top: -25%;
+    margin-left: 50%;
+   
+     
+    
+     color: rgb(21, 21, 80);
+     background-color: aliceblue;
+  }
+  .reflection{
+     display: flex;
+     position:relative;
+ }
+ .blog{
+    
+     position: sticky;
+     border: 4px solid;
+     border-color: blue;
+     padding: 2%;
+     /* background-color: black; */
+     text-align: center;
+     font-weight: 200;
+     margin-top: 100%;
+     transform: rotate(0deg);
+     background-repeat: no-repeat;
+      margin-left: 5%;
+      margin-right: 5%;
+      border-radius: 10%;
+      color: white;
+     
+  }
+  .excerpt{
+     position: relative;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 0%;
+    margin-top: 0em;
+ margin-left: 15%;
+ margin-right: 0%;}
+ 
+ .fa-quote-left{
+     color:rgb(7, 7, 97);
+     margin-top: 100px;
+     
+ }
+ .fa-quote-right{
+     color: rgb(7, 7, 97);
+     margin-left: 45%;
+ }
+ .reflection{
+    /* margin-top: 35%; */
+     display: block;
+     position: relative;
+  
+ }
+ 
+ .body-parts{
+     margin: 10%;
+ }
+ .reflection1{
+   position: relative;
+   width: 100%;
+   top: 100%;
+   
+  
+ 
+   
+    
+ }
+ .vl{
+     height: 1000px;
+     border-right: 3px solid red;
+     position: absolute;
+     left: 50%;
+     top:50vh ;
+     display: none;
+    
+ }
+ #blog-text{
+     margin-top:250%;
+     font-size: 1.5em;
+     margin-right: 0%;
+    word-break: break-all;
+    
+    
+     /* text-align: justify; */
+  }
+  .blog{
+    
+     position: absolute;
+     border: 4px solid;
+     border-color: blue;
+     padding: 5%;
+     background-color: black;
+     text-align: center;
+     font-weight: 200;
+     margin-top: 5%;
+     transform: rotate(0deg);
+     background-repeat: no-repeat;
+      margin-left: 0%;
+      margin-right: 5%;
+      border-radius: 10%;
+      color: white;
+     
+  }
+  .blog1{
+    display:block;
+    position: absolute;
+    top: 95%;
+     border: 4px solid;
+     border-color: blue;
+     padding: 5%;
+     background-color: black;
+     /* text-align: center; */
+     /* font-size: 25px; */
+     font-weight: 200;
+     margin-top: 0px;
+     transform: rotate(0deg);
+     background-repeat: no-repeat;
+      margin-left: 15%;
+      margin-right: 25%;
+      border-radius: 10%;
+      color: white;
+
+     
+  }
+  #comment{
+     font-size: 2em;
+   margin-left: 23%;
+     margin-top: 100%;
+     margin-bottom: 20px;
+  }
+  #input{
+     text-align: center;
+ margin-left: 15%;
+ width: 50vw;
+     padding: 2em;
+ 
+   
+  }
+  #submit{
+     position: absolute;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     padding: 1.5em;
+     width: 13em;
+     background-color: #234457;
+     border: none;
+     border-radius: 1em;
+     margin-top: 10em;
+     text-align: center;
+     cursor: pointer;
+     color: white;
+    
+    
+  }
+  #submit:hover{
+     background-color: #A61F2B;
+     color: white
+  }
+  
+ 
+ 
+  
+ footer {
+     padding-top: 3vh;
+     height: 45vh;
+     width: 100vw;
+     background-color: #17242b;
+ 
+     a {
+         color: white;
+         font-size: small;
+     }
+ 
+     h2 {
+         font-size: xxx-large;
+         color: white;
+         text-align: center;
+     }
+     margin-top: 30%;
+ 
+ }
+ 
+ #socials {
+     width: 100vw;
+     position: absolute;
+     gap: 2%;
+     left: 50%;
+    
+     padding-top: 35vh;
+     transform: translate(-50%, -50%);
+     color: white;
+     display: flex;
+     align-items: center;
+ }
+ 
+ form{
+     position: absolute;
+     transform: translate(-50%, -50%);
+     left: 50vw;
+     padding-top: 10vh;
+     font-size: large;
+     color: white;
+ }
+ .join-us input{
+     margin-top: 2vh;
+     width: 25vw;
+     height: 5vh;
+ }
+ .join-us button{
+     cursor: pointer;
+     width: 10vw;
+     height: 5vb;
+ }
+ .join-us button:hover{
+     background-color: #234457;
+     color: white;
+ }
+ .images{
+  
+     display: block;
+ }
+ }
+ 
