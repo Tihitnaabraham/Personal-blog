@@ -818,6 +818,13 @@ form{
      width: 10vw;
      height: 5vb;
  }
-
+ .join-us button:hover{
+     background-color: #234457;
+     color: white;
+ }
+ .images{
+  
+     display: block;
+ }
  }
  
