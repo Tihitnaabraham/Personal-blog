@@ -16,11 +16,14 @@
         <nav>
             <img src="image.html/logo (1).png" alt="logo">
             <div class="nav-links">
-                <a href="Tihitna-blog.html">Home</a>
-                <a href="https://bookreviewsbookclub.netlify.app/">Book Reviews</a>
-                <a href="https://weeklychallenges.netlify.app/">Week Challenge</a>
+                <a href="index.html">Home</a>
+                
+                <a href="planned-books.html">Planned Books to Read</a>
             </div>
-            <button type="button"><i class="fa-thin fa-cart-shopping"></i>Add to Cart</button>
+            <a class="shop-link" href="https://www.amazon.com/Books-Trevor-Noah/s?rh=n%3A283155%2Cp_27%3ATrevor%2BNoah" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                <span>Add to Cart</span>
+            </a>
         </nav>
     </header>
     <div class="body-parts">
@@ -94,29 +97,30 @@
 
 
 
-        <p id="comment">Leave a comment</p>
-        <input type="text" placeholder="comment here" id="input">
-        <button id="submit">Submit</button>
+        <form id="comment-form" action="https://formsubmit.co/fad676a00f2b9147d872f7df9c8e4a06" method="POST">
+            <input type="hidden" name="_subject" value="New comment on Born a Crime">
+            <label id="comment" for="input">Leave a comment</label>
+            <textarea id="input" name="comment" placeholder="Write your comment here" rows="5" maxlength="3000" required></textarea>
+            <button id="submit" type="submit">Send comment</button>
+            <p class="comment-note">Your comment will be emailed to Tihitna via FormSubmit.</p>
+        </form>
     </div>
     </div>
     <footer>
         <div class="join-us">
-            <h2>Suscribe here to get the latest Posts</h2>
-            <form action="">
-                <label for="email">Enter your email here</label>
-                <br>
-                <input type="email" name="email" id="email" placeholder="enter your email here">
-                <button type="button">Join</button>
+            <h2>Want updates on new reviews?</h2>
+            <form action="https://formsubmit.co/fad676a00f2b9147d872f7df9c8e4a06" method="POST">
+                <input type="hidden" name="_subject" value="New Read Reviews subscriber">
+                <label for="footer-email">Enter your email here</label>
+                <input type="email" name="email" id="footer-email" placeholder="Your email address" required>
+                <button type="submit">Join</button>
             </form>
         </div>
         <div id="socials">
-            <p>© 2025 by Read Reviews. Powered and secured by AkiraChix</p>
-
-            <a href="https://x.com/akirachix"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.facebook.com/AkiraChix/"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://www.linkedin.com/company/akirachix/mycompany/?viewAsMember=true"><i
-                    class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://www.youtube.com/@AkiraChixKenya"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+            <a href="https://wa.me/251976403580" aria-label="WhatsApp +251 976 403 580"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="mailto:tihitnaabraham@gmail.com" aria-label="Email Tihitna Abraham"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/tihitna-abraham-96354a350/?isSelfProfile=true" aria-label="Tihitna Abraham on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://t.me/Awra123" aria-label="Telegram @Awra123"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
         </div>
     </footer>
     

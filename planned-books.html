@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planned Books to Read | Read Reviews</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./books.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="books-page">
+    <header class="library-header">
+        <nav>
+            <img src="image.html/logo (1).png" alt="logo">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="planned-books.html" aria-current="page">Planned Books to Read</a>
+            </div>
+            <a class="shop-link" href="https://www.amazon.com/Books-Trevor-Noah/s?rh=n%3A283155%2Cp_27%3ATrevor%2BNoah" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                <span>Add to Cart</span>
+            </a>
+        </nav>
+        <div class="status-tabs" role="tablist" aria-label="Reading status">
+            <button class="status-tab is-active" type="button" role="tab" aria-selected="true" data-status-view="planned">Planned <span data-count="planned">5</span></button>
+            <button class="status-tab" type="button" role="tab" aria-selected="false" data-status-view="reading">Currently Reading <span data-count="reading">0</span></button>
+            <button class="status-tab" type="button" role="tab" aria-selected="false" data-status-view="completed">Completed <span data-count="completed">0</span></button>
+        </div>
+    </header>
+
+    <main class="library-main">
+        <section class="library-intro" aria-labelledby="page-title">
+            <h1 id="page-title">Planned Books to Read</h1>
+            <p>Open a legal preview or ebook option where available, or visit a retailer to find a copy.</p>
+        </section>
+
+        <div class="genre-filters" role="group" aria-label="Filter books by genre">
+            <button class="genre-chip is-active" type="button" data-genre-filter="all" aria-pressed="true">All Genres <span data-genre-count="all">5</span></button>
+            <button class="genre-chip" type="button" data-genre-filter="memoir" aria-pressed="false">Memoir &amp; Bio</button>
+            <button class="genre-chip" type="button" data-genre-filter="finance" aria-pressed="false">Finance &amp; Self-Help</button>
+            <button class="genre-chip" type="button" data-genre-filter="fiction" aria-pressed="false">Fiction</button>
+            <button class="genre-chip" type="button" data-genre-filter="amharic" aria-pressed="false">Amharic Books</button>
+            <button class="genre-chip utility-chip" id="search-toggle" type="button" aria-label="Search books" aria-expanded="false"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Search</button>
+            <button class="genre-chip utility-chip" id="saved-view-toggle" type="button" aria-pressed="false"><i class="fa-regular fa-bookmark" aria-hidden="true"></i> Saved</button>
+        </div>
+
+        <form class="search-panel" id="search-panel" role="search" hidden>
+            <label class="visually-hidden" for="book-search">Search books</label>
+            <input id="book-search" type="search" placeholder="Search titles or authors">
+        </form>
+
+        <section class="library-list" id="book-list" aria-label="Books in your reading list" aria-live="polite">
+            <article class="library-book" data-book-id="born-a-crime" data-status="planned" data-genre="memoir" data-title="Born a Crime" data-author="Trevor Noah" data-buy-url="https://www.amazon.com/Books-Trevor-Noah/s?rh=n%3A283155%2Cp_27%3ATrevor%2BNoah" data-cover="image.html/sec.jpeg">
+                <a class="book-cover" href="https://www.amazon.com/Books-Trevor-Noah/s?rh=n%3A283155%2Cp_27%3ATrevor%2BNoah" target="_blank" rel="noopener noreferrer" aria-label="Find Born a Crime by Trevor Noah">
+                    <img src="image.html/sec.jpeg" alt="Cover of Born a Crime by Trevor Noah">
+                </a>
+                <div class="library-book-details">
+                    <div class="book-card-topline">
+                        <label class="status-control"><span class="visually-hidden">Reading status for Born a Crime</span><select aria-label="Reading status for Born a Crime"><option value="planned" selected>Planned read</option><option value="reading">Currently reading</option><option value="completed">Completed</option></select></label>
+                        <button class="bookmark-button" type="button" aria-label="Save Born a Crime" aria-pressed="false"><i class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+                    </div>
+                    <h2>Born a Crime</h2>
+                    <p class="book-description">Stories from a South African childhood</p>
+                    <p class="book-byline">By <span>Trevor Noah</span></p>
+                    <a class="book-buy" href="https://books.google.com/books?q=Born+a+Crime+Trevor+Noah" target="_blank" rel="noopener noreferrer">Read or preview online <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                    <a class="book-retailer" href="https://www.amazon.com/Books-Trevor-Noah/s?rh=n%3A283155%2Cp_27%3ATrevor%2BNoah" target="_blank" rel="noopener noreferrer">Find a copy at Amazon</a>
+                </div>
+            </article>
+
+            <article class="library-book" data-book-id="rich-dad-poor-dad" data-status="planned" data-genre="finance" data-title="Rich Dad Poor Dad" data-author="Robert T. Kiyosaki" data-buy-url="https://www.amazon.com/s?k=Rich+Dad+Poor+Dad+Robert+Kiyosaki&i=stripbooks" data-cover="image.html/rich dad poor dad.jpg">
+                <a class="book-cover" href="https://www.amazon.com/s?k=Rich+Dad+Poor+Dad+Robert+Kiyosaki&i=stripbooks" target="_blank" rel="noopener noreferrer" aria-label="Find Rich Dad Poor Dad by Robert T. Kiyosaki">
+                    <img src="image.html/rich dad poor dad.jpg" alt="Cover of Rich Dad Poor Dad by Robert T. Kiyosaki">
+                </a>
+                <div class="library-book-details">
+                    <div class="book-card-topline">
+                        <label class="status-control"><span class="visually-hidden">Reading status for Rich Dad Poor Dad</span><select aria-label="Reading status for Rich Dad Poor Dad"><option value="planned" selected>Planned read</option><option value="reading">Currently reading</option><option value="completed">Completed</option></select></label>
+                        <button class="bookmark-button" type="button" aria-label="Save Rich Dad Poor Dad" aria-pressed="false"><i class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+                    </div>
+                    <h2>Rich Dad Poor Dad</h2>
+                    <p class="book-description">Personal finance classic</p>
+                    <p class="book-byline">By <span>Robert T. Kiyosaki</span></p>
+                    <a class="book-buy" href="https://books.google.com/books?q=Rich+Dad+Poor+Dad+Robert+T.+Kiyosaki" target="_blank" rel="noopener noreferrer">Read or preview online <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                    <a class="book-retailer" href="https://www.amazon.com/s?k=Rich+Dad+Poor+Dad+Robert+Kiyosaki&i=stripbooks" target="_blank" rel="noopener noreferrer">Find a copy at Amazon</a>
+                </div>
+            </article>
+
+            <article class="library-book" data-book-id="homegoing" data-status="planned" data-genre="fiction" data-title="Homegoing" data-author="Yaa Gyasi" data-buy-url="https://www.amazon.com/s?k=Homegoing+Yaa+Gyasi&i=stripbooks" data-cover="image.html/home going.jpg">
+                <a class="book-cover" href="https://www.amazon.com/s?k=Homegoing+Yaa+Gyasi&i=stripbooks" target="_blank" rel="noopener noreferrer" aria-label="Find Homegoing by Yaa Gyasi">
+                    <img src="image.html/home going.jpg" alt="Cover of Homegoing by Yaa Gyasi">
+                </a>
+                <div class="library-book-details">
+                    <div class="book-card-topline">
+                        <label class="status-control"><span class="visually-hidden">Reading status for Homegoing</span><select aria-label="Reading status for Homegoing"><option value="planned" selected>Planned read</option><option value="reading">Currently reading</option><option value="completed">Completed</option></select></label>
+                        <button class="bookmark-button" type="button" aria-label="Save Homegoing" aria-pressed="false"><i class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+                    </div>
+                    <h2>Homegoing</h2>
+                    <p class="book-description">Historical multi-generational novel</p>
+                    <p class="book-byline">By <span>Yaa Gyasi</span></p>
+                    <a class="book-buy" href="https://books.google.com/books?q=Homegoing+Yaa+Gyasi" target="_blank" rel="noopener noreferrer">Read or preview online <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                    <a class="book-retailer" href="https://www.amazon.com/s?k=Homegoing+Yaa+Gyasi&i=stripbooks" target="_blank" rel="noopener noreferrer">Find a copy at Amazon</a>
+                </div>
+            </article>
+
+            <article class="library-book" data-book-id="bereqereqetaa" data-status="planned" data-genre="amharic" data-title="Bereqereqetaa" data-author="Amharic-language book" data-buy-url="https://jiji.com.et/adama/books-and-games/bereqereqetaa-maphehafe-ktuZwnb2vhKXJDYlXRkdml8G.html" data-cover="image.html/birkrkta.jpg">
+                <a class="book-cover" href="https://jiji.com.et/adama/books-and-games/bereqereqetaa-maphehafe-ktuZwnb2vhKXJDYlXRkdml8G.html" target="_blank" rel="noopener noreferrer" aria-label="Find Bereqereqetaa on Jiji">
+                    <img src="image.html/birkrkta.jpg" alt="Cover of Bereqereqetaa">
+                </a>
+                <div class="library-book-details">
+                    <div class="book-card-topline">
+                        <label class="status-control"><span class="visually-hidden">Reading status for Bereqereqetaa</span><select aria-label="Reading status for Bereqereqetaa"><option value="planned" selected>Planned read</option><option value="reading">Currently reading</option><option value="completed">Completed</option></select></label>
+                        <button class="bookmark-button" type="button" aria-label="Save Bereqereqetaa" aria-pressed="false"><i class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+                    </div>
+                    <h2>Bereqereqetaa</h2>
+                    <p class="book-description">Amharic-language book</p>
+                    <p class="book-byline">By <span>Amharic-language author</span></p>
+                    <a class="book-buy" href="https://books.google.com/books?q=Bereqereqetaa" target="_blank" rel="noopener noreferrer">Read or preview online <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                    <a class="book-retailer" href="https://jiji.com.et/adama/books-and-games/bereqereqetaa-maphehafe-ktuZwnb2vhKXJDYlXRkdml8G.html" target="_blank" rel="noopener noreferrer">Find a copy on Jiji</a>
+                </div>
+            </article>
+
+            <article class="library-book" data-book-id="zigora" data-status="planned" data-genre="amharic" data-title="Zigora" data-author="Dr. Alemayehu Wassie" data-buy-url="https://addisbooks.com/book/zigora-by-dr-alemayehu-wassie/" data-cover="image.html/zigora.jpg">
+                <a class="book-cover" href="https://addisbooks.com/book/zigora-by-dr-alemayehu-wassie/" target="_blank" rel="noopener noreferrer" aria-label="Find Zigora by Dr. Alemayehu Wassie at AddisBooks">
+                    <img src="image.html/zigora.jpg" alt="Cover of Zigora by Dr. Alemayehu Wassie">
+                </a>
+                <div class="library-book-details">
+                    <div class="book-card-topline">
+                        <label class="status-control"><span class="visually-hidden">Reading status for Zigora</span><select aria-label="Reading status for Zigora"><option value="planned" selected>Planned read</option><option value="reading">Currently reading</option><option value="completed">Completed</option></select></label>
+                        <button class="bookmark-button" type="button" aria-label="Save Zigora" aria-pressed="false"><i class="fa-regular fa-bookmark" aria-hidden="true"></i></button>
+                    </div>
+                    <h2>Zigora</h2>
+                    <p class="book-description">Amharic-language book</p>
+                    <p class="book-byline">By <span>Dr. Alemayehu Wassie</span></p>
+                    <a class="book-buy" href="https://books.google.com/books?q=Zigora+Dr.+Alemayehu+Wassie" target="_blank" rel="noopener noreferrer">Read or preview online <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                    <a class="book-retailer" href="https://addisbooks.com/book/zigora-by-dr-alemayehu-wassie/" target="_blank" rel="noopener noreferrer">Find a copy at AddisBooks</a>
+                </div>
+            </article>
+        </section>
+
+        <p class="empty-message" id="empty-message" hidden>No books match this view yet.</p>
+
+        <section class="add-book-panel" aria-labelledby="add-book-heading">
+            <span class="add-book-plus" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+            <h2 id="add-book-heading">Want to add another book?</h2>
+            <p>Changes are saved privately in this browser.</p>
+            <button class="add-book-trigger" id="add-book-trigger" type="button">Add Book to List</button>
+        </section>
+    </main>
+
+    <dialog class="add-book-dialog" id="add-book-dialog" aria-label="Add a book to your personal reading list">
+        <form class="add-book-form" id="add-book-form">
+            <div class="dialog-heading">
+                <p class="section-kicker">Your personal list</p>
+                <button class="dialog-close" id="dialog-close" type="button" aria-label="Close dialog"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+            </div>
+            <label>Book title<input name="title" type="text" required maxlength="100"></label>
+            <label>Author<input name="author" type="text" required maxlength="100"></label>
+            <label>Genre<select name="genre"><option value="memoir">Memoir &amp; Bio</option><option value="finance">Finance &amp; Self-Help</option><option value="fiction">Fiction</option><option value="amharic">Amharic Books</option></select></label>
+            <label>Where to buy<input name="buyUrl" type="url" placeholder="https://" required></label>
+            <label>PDF link <span>(optional; use a link you have permission to share)</span><input name="pdfUrl" type="url" placeholder="https://"></label>
+            <div class="cover-upload-field">
+                <label for="book-cover-file">Cover image <span>Optional JPG, PNG, or WebP under 500 KB</span></label>
+                <input id="book-cover-file" name="coverFile" type="file" accept="image/jpeg,image/png,image/webp">
+                <img class="cover-preview" id="cover-preview" alt="Selected book cover preview" hidden>
+            </div>
+            <div class="dialog-actions"><button class="cancel-button" id="dialog-cancel" type="button">Cancel</button><button class="save-button" type="submit">Add book</button></div>
+        </form>
+    </dialog>
+
+    <script src="books.js" defer></script>
+</body>
+
+</html>
